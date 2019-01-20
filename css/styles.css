@@ -40,9 +40,13 @@ a:hover:{color:#333}
 	top:0;
 	right:0;
 	background-image:url(../images/purple-lg-bg.PNG);
+	background-color: #f3f3f3;
 	background-position: right top;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+-webkit-box-shadow: 93px 59px 36px 100px rgba(243,243,243,1);
+-moz-box-shadow: 93px 59px 36px 100px rgba(243,243,243,1);
+box-shadow: 93px 59px 36px 100px rgba(243,243,243,1);
 
 	
 }
@@ -58,11 +62,14 @@ a:hover:{color:#333}
 	overflow: visible;
 	margin:5% auto;
 	border:#e3e3e3;
-	-webkit-box-shadow: -1px -1px 5px 7px rgba(227,227,227,1);
+	-webkit-box-shadow: -17px 17px 5px -9px rgba(229,229,229,1);
+	-moz-box-shadow: -17px 17px 5px -9px rgba(229,229,229,1);
+	box-shadow: -17px 17px 5px -9px rgba(229,229,229,1);
+	/*-webkit-box-shadow: -1px -1px 5px 7px rgba(227,227,227,1);
 -moz-box-shadow: -1px -1px 5px 7px rgba(227,227,227,1);
 box-shadow: -1px -1px 5px 7px rgba(227,227,227,1);
 
-}
+}*/}
 .inf{margin: 4% auto auto;
     padding-left: 46px;
     font-size: 20px;
@@ -141,7 +148,7 @@ nav-link i{color: #a2a2a2}
 ======================================================================================
 experience
 ======================================================================================*/
-#works h4:after{
+#works h4:after,#skills h4:after,#experience h4:after{
 	position: absolute;
     width: 5%!important;
     top: 33px;
@@ -153,7 +160,8 @@ experience
     text-align: center;
     opacity: 1;
     background: #468df8;
-}#works ul:after{
+}
+#works ul:after{
 	position: absolute;
     width: 11px!important;
     top: 152px;
@@ -168,3 +176,54 @@ experience
 }
 #works ul {color: #a3a3a3;margin-top: 10px;padding: 20px;}
 #works ul h4{color: #525252}
+/*
+======================================================================================
+skills
+======================================================================================*/
+#skills h4:after{
+background:#01d1a7;	
+
+}
+#experience h4:after{
+    background:#f84b3e;	
+    left: 113px;
+
+}
+
+/*
+======================================================================================
+portfilio
+======================================================================================*/
+.bg-projects{
+	background-image: url(../images/1.png);
+	width:125px;
+	height: 125px;
+	border-radius: 50%;
+	background-position: center center;
+	text-align: center;
+	padding: 90px!important;
+    margin: 50px 10px 50px 10px!important;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	transition: all .6s ease-in-out
+}
+.bg-projects:hover{opacity: .7}
+.bg-projects a{    
+	position: absolute;
+    top: 70px;
+    left: 29px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffff;
+    text-decoration: none;
+}
+.bg-projects a:hover{color:#f85144}
+	/*visibility: hidden;
+.bg-projects a:hover{visibility: visible;}*/
+
+
+
+
+
+

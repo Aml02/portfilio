@@ -34,3 +34,27 @@ function change1(){
 	z[3].style.borderTopColor="#f1f1f1";
 	
 }
+/*****************************************************************************/
+var background=document.getElementsByClassName("bg-projects");
+var source=[
+	"images/1.png",
+	"images/2.png",
+	"images/3.png",
+	"images/4.png",
+	"images/5.png",
+	"images/6.png",
+	"images/7.png",
+	"images/8.png",
+	"images/9.png",
+	"images/10.png",
+	"images/11.png",
+	"images/12.png"
+]
+for(var i=0;i<background.length;i++){
+    for(var s=0;s<source.length;s++){
+		if(i=s){
+			background[i].style.backgroundImage="url("+source[s]+")";
+		}
+	}
+	
+}
